@@ -4,10 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casetify | by Young Bo</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <script
+      src="https://kit.fontawesome.com/a783be06bc.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
-      <div class="header-logo"></div>
+      <div class="header-logo">
+        <img src="img/casetify-logo.png" alt="CASETiFY" />
+      </div>
       <ul class="header-menu">
         <li>커스텀 스튜디오</li>
         <li>핸드폰</li>
@@ -17,21 +24,52 @@
         <li>#casetifycares</li>
       </ul>
       <div class="header-menu__button">
-        <img src="" alt="Korea" />
-        <span></span>
-        <span></span>
-        <span></span>
+        <img class="flag-korea" src="img/kr.svg" alt="Korea" />
+        <span><i class="fas fa-search"></i></span>
+        <span><i class="fas fa-shopping-cart"></i></span>
+        <span><i class="fas fa-user"></i></span>
       </div>
     </header>
     <main>
-      <section class="product-wall"></section>
-      <section class="product-new">
-        <div class="product-new__title">
-          <h3>Our Best Cases Just Got Even Better</h3>
+      <section class="product-wall">
+        <div class="product-wall__box">
+          <img src="img/6f861eccb412ed2084b25d5803f025a6.jpg.jpg" alt="" />
+          <h3>NEW! 아이폰 12 케이스</h3>
         </div>
-        <p>Protective. Sustainable. Antimicrobial.</p>
-        <div class="product-new__button">
-          <h4>shop iphone12 pro cases</h4>
+        <div class="product-wall__box">
+          <img src="img/6645e3a581066f880a9322b69af7bc18.jpg.jpg" alt="" />
+          <h3>아이폰 12 케이스 스타일과 보호력을 동시에</h3>
+        </div>
+        <div class="product-wall__box">
+          <img src="img/46b9c0f9b2793a02bcfa6820c93030a0.jpg.jpg" alt="" />
+          <h3>아이폰 12를 위한 완벽한 프린팅</h3>
+        </div>
+        <div class="product-wall__box">
+          <img src="img/330e1a58a707c4b81ff898fa0ed108b2.jpg.jpg" alt="" />
+          <h3>레더 케이스로 아이폰12를 더 고급스럽게</h3>
+        </div>
+        <div class="product-wall__box">
+          <img src="img/48675c64579c2f2e9aa544627211bf25.jpg.jpg" alt="" />
+          <h3>PPRF X CASETiFY</h3>
+        </div>
+      </section>
+      <section class="product-new">
+        <div class="product-new__title-box">
+          <div class="product-new__title">
+            <h3>Our Best Cases Just Got Even Better</h3>
+          </div>
+          <p>Protective. Sustainable. Antimicrobial.</p>
+          <div class="product-new__button">
+            <h4>shop iphone12 pro cases</h4>
+          </div>
+        </div>
+        <div>
+          <video
+            src="video/3f541398d0d4ec7fb1bd48d3cd2e4798.mp4"
+            autoplay
+            muted
+            loop
+          ></video>
         </div>
       </section>
       <article class="casetify-community">
@@ -43,9 +81,18 @@
           </p>
         </div>
         <div class="casetify-community__image">
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="casetify-community__box-1">
+            <img src="img/6429f57a350b1861985da72e7590fd5c.jpg" alt="" />
+            <span>@i_am_hongheexx X Impact Case</span>
+          </div>
+          <div class="casetify-community__box-2">
+            <img src="img/08666b20db2c428b45ee3dee698690cf.jpg" alt="" />
+            <span>@eitchlove_omw X Impact Case</span>
+          </div>
+          <div class="casetify-community__box-3">
+            <img src="img/7d0e8cc19ff3f0e553c64228e781fbed.jpg" alt="" />
+            <span>@an__dante_ X Impact Case</span>
+          </div>
         </div>
       </article>
       <section class="best-selling">
@@ -54,11 +101,67 @@
           <p>지금 가장 트렌디한 케이스로 핸드폰을 스타일리시하게</p>
         </div>
         <div class="best-selling__items">
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
-          <div></div>
+          <div class="best-selling__items-box">
+            <img
+              src="img/11806898_iphone12-pro__color_white_16001631.png.350x350-t.png"
+              alt="Mirror Case"
+            /><span>Custom iPhone 12 Pro Mirror</span>
+          </div>
+          <div class="best-selling__items-box">
+            <img
+              src="img/3553011_iphone12-pro__color_white_16001657.png.350x350-t.png"
+              alt="Ultra Impact"
+            /><span>Classic Camera iPhone 12 Pro Ultra Impact</span>
+          </div>
+          <div class="best-selling__items-box">
+            <img
+              src="img/1497551_iphone12-pro__color_white_16001660.png.350x350-t.png"
+              alt="Ultra Impact"
+            /><span>Vintage Camera iPhone 12 Pro Ultra Impact</span>
+          </div>
+          <div class="best-selling__items-box">
+            <img
+              src="img/11806873_iphone12-pro__color_white_16001542.png.350x350-t.png"
+              alt="Impact"
+            /><span>Pangram Custom iPhone 12 Pro Impact</span>
+          </div>
+          <div class="best-selling__items-box">
+            <img
+              src="img/11003363_iphone12-pro__color_white_16001657.png.350x350-t.png"
+              alt="Ultra Impact"
+            /><span>Holographic Sticker iPhone 12 Pro Ultra Impact</span>
+          </div>
+        </div>
+      </section>
+      <section class="best-selling__slide">
+        <div class="best-selling__slide-box">
+          <img src="img/1f77d25a45de6c6f2712c0f2c8f3156b.jpg" alt="" />
+          <span>액정필름</span>
+        </div>
+        <div class="best-selling__slide-box">
+          <img src="img/23c88d42efbe29344e30314870928bd6.png" alt="" /><span
+            >커스텀 폰케이스</span
+          >
+        </div>
+        <div class="best-selling__slide-box">
+          <img src="img/09ca8992cf1141684f96c9df21aac516.jpg" alt="" /><span
+            >애플 워치 밴드 둘러보기</span
+          >
+        </div>
+        <div class="best-selling__slide-box">
+          <img src="img/c9c15b1d17cd73425564260ba016a2ef.jpg" alt="" /><span
+            >에어팟 케이스 둘러보기</span
+          >
+        </div>
+        <div class="best-selling__slide-box">
+          <img src="img/f2fe5cf45584cf40a0cd25b25f771879.jpg" alt="" /><span
+            >아이폰 케이스 둘러보기</span
+          >
+        </div>
+        <div class="best-selling__slide-box">
+          <img src="img/de37138a169e579b30e834dd65f0a2ee.jpg" alt="" /><span
+            >테크 가젯</span
+          >
         </div>
       </section>
       <section class="casetify-cares">
@@ -67,7 +170,7 @@
           <p>CASETiFY는 글로벌 커뮤니티를 후원하고 공익적 가치를 지지합니다</p>
         </div>
         <div class="casetify-cares__container">
-          <img src="" alt="" />
+          <img src="img/02a73e6d85812793682f25f2e9241467.png" alt="" />
           <h5>지구의 날 네트워크</h5>
           <p>
             케이스티파이는 지구의날 네트워크 캐노피 프로젝트의 파트너로,
@@ -78,7 +181,7 @@
           </div>
         </div>
         <div class="casetify-cares__container">
-          <img src="" alt="" />
+          <img src="img/4197938413b12b04bb5a3252eee8373b.jpg" alt="" />
           <h5>다이렉트 릴리프</h5>
           <p>마스크 35,000장 기부 완료 (추가 기부활동이 진행 중)</p>
           <div class="casetify-cares__container-box">
@@ -86,22 +189,11 @@
           </div>
         </div>
         <div class="casetify-cares__container">
-          <img src="" alt="" />
+          <img src="img/e72cfe74ee837016f8520cecb2238f7d.jpg" alt="" />
           <h5>글로벌기빙</h5>
           <p>
             UV 스마트폰 살균기의 수익 100%는 코로나바이러스 구호를 위해
             글로벌기빙에 전달됩니다
-          </p>
-          <div class="casetify-cares__container-box">
-            <span>자세히 알아보기</span>
-          </div>
-        </div>
-        <div class="casetify-cares__container">
-          <img src="" alt="" />
-          <h5>Malala Fund</h5>
-          <p>
-            100% of proceeds from the Her Impact Matters collection went to
-            support girls' education through Malala Fund
           </p>
           <div class="casetify-cares__container-box">
             <span>자세히 알아보기</span>
@@ -154,7 +246,34 @@
           <li>반품</li>
         </ul>
       </div>
-      <div class="review-wrap"></div>
+      <div class="review-wrap">
+        <span>Great</span>
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <img src="" alt="" />
+        <span>3,792 review on</span>
+        <img src="" alt="" />
+        <span>Trustpilot</span>
+      </div>
+      <div class="footer-copyright">
+        <div>
+          <div>
+            <span>Copyright © 2020 CASETiFY</span>
+          </div>
+          <div>
+            <a href=""><span>개인정보 처리방침</span></a>
+          </div>
+          <div>
+            <a href=""><span>약관</span></a>
+          </div>
+        </div>
+        <div>
+          <img class="flag-korea" src="img/kr.svg" alt="" />
+          <span>한국어</span>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
