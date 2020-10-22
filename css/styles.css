@@ -98,8 +98,98 @@ a {
 
 /* product-wall photo slide section */
 
-.product-wall__slides {
-  margin-bottom: 100px;
+#product-slides {
+  width: 100%;
+  height: 100vh;
+}
+
+.product-slides__wrap {
+  width: 100%;
+  height: 640px;
+  position: relative;
+}
+
+.product-slides__photo {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s;
+}
+
+.product-slides__photo:first-child {
+  background: url(../img/6f861eccb412ed2084b25d5803f025a6.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.product-slides__photo:nth-child(2) {
+  background: url(../img/6645e3a581066f880a9322b69af7bc18.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.product-slides__photo:nth-child(3) {
+  background: url(../img/46b9c0f9b2793a02bcfa6820c93030a0.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.product-slides__photo:nth-child(4) {
+  background: url(../img/330e1a58a707c4b81ff898fa0ed108b2.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.product-slides__photo:nth-child(5) {
+  background: url(../img/48675c64579c2f2e9aa544627211bf25.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#product-slides__button {
+  width: 600px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 300px);
+  z-index: 10;
+}
+
+#product-slides__button li {
+  width: 80px;
+  height: 2px;
+  background: gray;
+  list-style: none;
+  cursor: pointer;
+}
+
+#product-slides__button li:first-child {
+  background: white;
 }
 
 /* product-new section 스타일 */
@@ -287,6 +377,32 @@ a {
 
 /* Best-selling__slide Section */
 
+#best-selling__slide {
+  width: 100%;
+  height: 100vh;
+}
+
+.best-selling__wrap {
+  width: 1170px;
+  height: 500px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.best-selling__slide-box {
+  position: relative;
+  margin-right: 20px;
+}
+
+.best-selling__slide-box span {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
 /* Casetify-Cares Section */
 
 .casetify-cares__wrap {
@@ -356,7 +472,7 @@ a {
   color: black;
 }
 
-/* footer Section */
+/* FOOTER */
 
 /* SNS, Email Submit Section */
 
