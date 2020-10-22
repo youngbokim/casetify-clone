@@ -18,7 +18,11 @@
           <a href=""> 케이스 컬러 보러가기</a></span
         >
       </div>
+
       <div class="header-wrap">
+        <div class="header-button__mobile">
+          <i class="fas fa-bars fa-2x"></i>
+        </div>
         <div class="header-logo">
           <a href="index.html"
             ><img src="img/casetify-logo.png" alt="CASETiFY"
@@ -45,46 +49,32 @@
           ></span>
         </div>
       </div>
+      <div class="header-banner__mobile">
+        <span
+          >NEW! 아이폰 12 프로를 위한 컬러
+          <a href=""> 케이스 컬러 보러가기</a></span
+        >
+      </div>
     </header>
     <main>
-      <section class="product-wall">
-        <div class="product-wall__slides">
-          <input type="radio" name="r" id="r1" checked />
-          <input type="radio" name="r" id="r2" />
-          <input type="radio" name="r" id="r3" />
-          <input type="radio" name="r" id="r4" />
-          <input type="radio" name="r" id="r5" />
-          <div class="product-wall__slide">
-            <img src="img/6f861eccb412ed2084b25d5803f025a6.jpg.jpg" alt="" />
-            <!-- <h3>NEW! 아이폰 12 케이스</h3> -->
-          </div>
-          <div class="product-wall__slide">
-            <img src="img/6645e3a581066f880a9322b69af7bc18.jpg.jpg" alt="" />
-            <!-- <h3>아이폰 12 케이스 스타일과 보호력을 동시에</h3> -->
-          </div>
-          <div class="product-wall__slide">
-            <img src="img/46b9c0f9b2793a02bcfa6820c93030a0.jpg.jpg" alt="" />
-            <!-- <h3>아이폰 12를 위한 완벽한 프린팅</h3> -->
-          </div>
-          <div class="product-wall__slide">
-            <img src="img/330e1a58a707c4b81ff898fa0ed108b2.jpg.jpg" alt="" />
-            <!-- <h3>레더 케이스로 아이폰12를 더 고급스럽게</h3> -->
-          </div>
-          <div class="product-wall__slide">
-            <img src="img/48675c64579c2f2e9aa544627211bf25.jpg.jpg" alt="" />
-            <!-- <h3>PPRF X CASETiFY</h3> -->
-          </div>
+      <section id="product-slides">
+        <div class="product-slides__wrap">
+          <div class="product-slides__photo"></div>
+          <div class="product-slides__photo"></div>
+          <div class="product-slides__photo"></div>
+          <div class="product-slides__photo"></div>
+          <div class="product-slides__photo"></div>
 
-          <div class="product-wall__navigation">
-            <label for="r1" class="navigation-bar"></label>
-            <label for="r2" class="navigation-bar"></label>
-            <label for="r3" class="navigation-bar"></label>
-            <label for="r4" class="navigation-bar"></label>
-            <label for="r5" class="navigation-bar"></label>
-          </div>
+          <ul id="product-slides__button">
+            <li class="product-slides__button" onclick="slideChange(0)"></li>
+            <li class="product-slides__button" onclick="slideChange(1)"></li>
+            <li class="product-slides__button" onclick="slideChange(2)"></li>
+            <li class="product-slides__button" onclick="slideChange(3)"></li>
+            <li class="product-slides__button" onclick="slideChange(4)"></li>
+          </ul>
         </div>
       </section>
-      <section class="product-new">
+      <section id="product-new">
         <div class="product-new__wrap">
           <div class="product-new__title-box">
             <div class="product-new__title">
@@ -111,6 +101,11 @@
               loop
             ></video>
           </div>
+          <div class="product-new__button-mobile">
+            <a href="#">
+              <span>아이폰 12 프로 케이스 바로가기</span>
+            </a>
+          </div>
         </div>
       </section>
       <section class="casetify-community">
@@ -119,7 +114,7 @@
             <h3># CASETIFYCommunity</h3>
             <p>
               # CASETIFYCommunity와 함께 셀카를. 케이스티파이 핸드폰 케이스로
-              셀럽, 인플루엔서처럼 더 측별한 셀카를 완성하세요.
+              셀럽, 인플루엔서처럼 더 특별한 셀카를 완성하세요.
             </p>
           </div>
           <div class="casetify-community__photo-wrap">
@@ -159,7 +154,7 @@
           </div>
         </div>
       </section>
-      <section class="best-selling">
+      <section id="best-selling">
         <div class="best-selling__title title">
           <h3>best selling items</h3>
           <p>지금 가장 트렌디한 케이스로 핸드폰을 스타일리시하게</p>
@@ -224,38 +219,68 @@
           </div>
         </div>
       </section>
-      <section class="best-selling__slide">
-        <div class="best-selling__slide-box">
-          <img src="img/1f77d25a45de6c6f2712c0f2c8f3156b.jpg" alt="" />
-          <span>액정필름</span>
+      <section id="best-selling__slide">
+        <div class="best-selling__title">
+          <h3 class="title">인기 아이템 둘러보기</h3>
         </div>
-        <div class="best-selling__slide-box">
-          <img src="img/23c88d42efbe29344e30314870928bd6.png" alt="" /><span
-            >커스텀 폰케이스</span
-          >
-        </div>
-        <div class="best-selling__slide-box">
-          <img src="img/09ca8992cf1141684f96c9df21aac516.jpg" alt="" /><span
-            >애플 워치 밴드 둘러보기</span
-          >
-        </div>
-        <div class="best-selling__slide-box">
-          <img src="img/c9c15b1d17cd73425564260ba016a2ef.jpg" alt="" /><span
-            >에어팟 케이스 둘러보기</span
-          >
-        </div>
-        <div class="best-selling__slide-box">
-          <img src="img/f2fe5cf45584cf40a0cd25b25f771879.jpg" alt="" /><span
-            >아이폰 케이스 둘러보기</span
-          >
-        </div>
-        <div class="best-selling__slide-box">
-          <img src="img/de37138a169e579b30e834dd65f0a2ee.jpg" alt="" /><span
-            >테크 가젯</span
-          >
+        <div class="best-selling__wrap">
+          <div class="best-selling__slide-box">
+            <img
+              src="img/1f77d25a45de6c6f2712c0f2c8f3156b.jpg"
+              width="375px"
+              height="270px"
+              alt=""
+            />
+            <div><span>액정필름</span></div>
+          </div>
+          <div class="best-selling__slide-box">
+            <img
+              src="img/23c88d42efbe29344e30314870928bd6.png"
+              width="375px"
+              height="270px"
+              alt=""
+            />
+            <span>커스텀 폰케이스</span>
+          </div>
+          <div class="best-selling__slide-box">
+            <img
+              src="img/09ca8992cf1141684f96c9df21aac516.jpg"
+              width="375px"
+              height="270px"
+              alt=""
+            />
+            <span>애플 워치 밴드 둘러보기</span>
+          </div>
+          <div class="best-selling__slide-box">
+            <img
+              src="img/c9c15b1d17cd73425564260ba016a2ef.jpg"
+              width="375px"
+              height="270px"
+              alt=""
+            />
+            <span>에어팟 케이스 둘러보기</span>
+          </div>
+          <div class="best-selling__slide-box">
+            <img
+              src="img/f2fe5cf45584cf40a0cd25b25f771879.jpg"
+              width="375px"
+              height="270px"
+              alt=""
+            />
+            <span>아이폰 케이스 둘러보기</span>
+          </div>
+          <div class="best-selling__slide-box">
+            <img
+              src="img/de37138a169e579b30e834dd65f0a2ee.jpg"
+              width="375px"
+              height="270px"
+              alt=""
+            />
+            <span>테크 가젯</span>
+          </div>
         </div>
       </section>
-      <section class="casetify-cares">
+      <section id="casetify-cares">
         <div class="casetify-cares__wrap">
           <div class="casetify-cares__title title">
             <h3># CASETiFYCares</h3>
@@ -336,6 +361,19 @@
             <a href=""><i class="fab fa-pinterest-p fa-2x"></i></a>
             <a href=""><i class="fab fa-tiktok fa-2x"></i></a>
           </div>
+          <div class="footer-list__mobile list">
+            <ul>
+              <li>홈페이지</li>
+              <li>체크아웃</li>
+              <li>언론 / 보도</li>
+              <li>직접 문의하기</li>
+              <li>매장 방문하기</li>
+              <li>가입하기</li>
+              <li>지원</li>
+              <li>지원하는 기종</li>
+              <li>언어</li>
+            </ul>
+          </div>
         </div>
         <div class="product-list__wrap">
           <div>
@@ -407,5 +445,23 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      function slideChange(slideNumber) {
+        for (i = 0; i < 5; i++) {
+          document.getElementsByClassName("product-slides__photo")[i].style =
+            "opacity:0; ";
+          document.getElementsByClassName("product-slides__button")[i].style =
+            "background:gray; ";
+        }
+
+        document.getElementsByClassName("product-slides__photo")[
+          slideNumber
+        ].style = "opacity:1; ";
+        document.getElementsByClassName("product-slides__button")[
+          slideNumber
+        ].style = "background:white; ";
+      }
+    </script>
   </body>
 </html>

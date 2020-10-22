@@ -44,6 +44,10 @@ a {
   text-decoration: underline;
 }
 
+.header-banner__mobile {
+  display: none;
+}
+
 .header-wrap {
   display: flex;
   justify-content: space-around;
@@ -51,6 +55,10 @@ a {
   width: 100%;
   height: 80px;
   margin-top: 10px;
+}
+
+.header-menu__button {
+  display: none;
 }
 
 .header-logo {
@@ -98,8 +106,98 @@ a {
 
 /* product-wall photo slide section */
 
-.product-wall__slides {
-  margin-bottom: 100px;
+#product-slides {
+  width: 100%;
+  height: 640px;
+}
+
+.product-slides__wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.product-slides__photo {
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.4s;
+}
+
+.product-slides__photo:first-child {
+  background: url(../img/6f861eccb412ed2084b25d5803f025a6.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+}
+
+.product-slides__photo:nth-child(2) {
+  background: url(../img/6645e3a581066f880a9322b69af7bc18.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+.product-slides__photo:nth-child(3) {
+  background: url(../img/46b9c0f9b2793a02bcfa6820c93030a0.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+}
+.product-slides__photo:nth-child(4) {
+  background: url(../img/330e1a58a707c4b81ff898fa0ed108b2.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.product-slides__photo:nth-child(5) {
+  background: url(../img/48675c64579c2f2e9aa544627211bf25.jpg.jpg) no-repeat
+    center center;
+  background-size: cover;
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+#product-slides__button {
+  width: 600px;
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 300px);
+  z-index: 10;
+}
+
+#product-slides__button li {
+  width: 80px;
+  height: 2px;
+  background: gray;
+  list-style: none;
+  cursor: pointer;
+}
+
+#product-slides__button li:first-child {
+  background: white;
 }
 
 /* product-new section 스타일 */
@@ -156,6 +254,10 @@ a {
 .product-new__button span {
   font-size: 14px;
   font-weight: 600;
+}
+
+.product-new__button-mobile {
+  display: none;
 }
 
 .product-new__video {
@@ -266,7 +368,7 @@ a {
 
 .best-selling__items {
   width: 100%;
-  height: 600px;
+  height: 500px;
 }
 
 .best-selling__items-wrap {
@@ -286,6 +388,32 @@ a {
 }
 
 /* Best-selling__slide Section */
+
+#best-selling__slide {
+  width: 100%;
+  height: 600px;
+}
+
+.best-selling__wrap {
+  width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow-x: scroll;
+}
+
+.best-selling__slide-box {
+  position: relative;
+  margin-right: 20px;
+}
+
+.best-selling__slide-box span {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
 
 /* Casetify-Cares Section */
 
@@ -356,7 +484,7 @@ a {
   color: black;
 }
 
-/* footer Section */
+/* FOOTER */
 
 /* SNS, Email Submit Section */
 
@@ -433,6 +561,10 @@ footer {
   height: 330px;
 }
 
+.footer-list__mobile {
+  display: none;
+}
+
 .review-wrap {
   display: flex;
   justify-content: center;
@@ -491,4 +623,114 @@ footer {
 .footer-language span {
   margin-left: 10px;
   color: white;
+}
+
+/* mobile responsive section */
+
+@media screen and (max-width: 768px) {
+  /* header styles */
+
+  .header-wrap {
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0;
+  }
+
+  .header-button__mobile {
+    font-size: 12px;
+  }
+
+  .header-menu li,
+  .header-menu__button,
+  .header-banner {
+    display: none;
+  }
+
+  .header-banner__mobile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 33px;
+    background-color: #f25b40;
+    font-size: 14px;
+    color: white;
+  }
+
+  .header-banner__mobile a {
+    color: white;
+    text-decoration: underline;
+  }
+
+  /* product slides section */
+
+  /* product new section */
+
+  .product-new__wrap {
+    display: block;
+    box-sizing: border-box;
+  }
+
+  .product-new__button {
+    display: none;
+  }
+
+  .product-new__button-mobile {
+    display: block;
+    margin-top: 20px;
+    border: 2px solid #ea594e;
+    padding: 17px 15px;
+    background-color: #ea594e;
+    font-size: 14px;
+    box-sizing: border-box;
+    text-align: center;
+  }
+
+  /* casetify community section */
+
+  .casetify-community__photo-wrap {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    overflow-x: scroll;
+  }
+
+  /* best selling itmes section */
+
+  .best-selling__items-wrap {
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow-x: scroll;
+  }
+
+  /* best selling slide section*/
+
+  .best-selling__wrap {
+    width: 100%;
+  }
+
+  /* casetify cares section */
+
+  .casetify-cares__article-wrap {
+    width: 100%;
+    overflow-x: scroll;
+  }
+
+  /* footer section */
+
+  .footer-list__wrap {
+    width: 100%;
+  }
+
+  .product-list__wrap,
+  .support-wrap {
+    display: none;
+  }
+
+  /* copyright section */
 }
